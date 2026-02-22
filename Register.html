@@ -59,7 +59,11 @@
         </table>     
     </form>
     <script>
-    alert("Registered.")
+    alert("Registered.");
+    document.getElementById("registerForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+        alert("submitting");
+    })
 </script>
     </Main>
     <footer> 
@@ -67,4 +71,5 @@
     </footer>
 
 </body> 
+
 
